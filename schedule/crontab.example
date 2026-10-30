@@ -1,0 +1,3 @@
+# Linux/macOS: run `crontab -e` and add one line. Starts at 09:00; daily.py then waits a
+# random 0-180 min on its own (see MAX_START_DELAY_MINUTES in config.py).
+0 9 * * * cd /path/to/leetcode_planner && /usr/bin/python3 daily.py >> logs/cron.log 2>&1
